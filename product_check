@@ -1,0 +1,28 @@
+class Solution:
+    def isProduct(self, arr, target):
+
+        b = set()
+        i = 0
+
+        while i < len(arr):
+
+            
+            if arr[i] == 0:
+                if target == 0 and 0 in b:
+                    return True
+
+            else:
+                
+                if target % arr[i] == 0:
+
+                    n = target // arr[i]
+
+                    if n in b:
+                        return True
+
+            
+            b.add(arr[i])
+
+            i += 1
+
+        return False
