@@ -1,0 +1,8 @@
+#User function template for Python 3
+class Solution:
+    def findExtra(self,a,b):
+        for i in range(len(a)):
+            if a[i] not in b:
+                return i
+        #add code here
+
