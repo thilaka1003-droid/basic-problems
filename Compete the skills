@@ -1,0 +1,16 @@
+class Solution:
+    def scores(self, a, b):
+        k=0
+        l=0
+        c=[]
+        for i in range(len(a)):
+            if a[i]>b[i]:
+            
+                k+=1
+            
+            elif(a[i]<b[i]):
+                
+                l+=1
+            else:
+                continue
+        return [k,l]        
