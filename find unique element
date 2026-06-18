@@ -1,0 +1,8 @@
+class Solution:
+    def findUnique(self, arr):
+       b=sum(set(arr))
+       c=2*b
+       d=sum(arr)
+       e=d-c
+       return abs(e)
+    
