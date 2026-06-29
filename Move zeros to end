@@ -1,0 +1,24 @@
+class Solution {
+  public:
+    void pushZerosToEnd(vector<int>& arr) {
+        // code here
+        vector<int>temp;
+        int n=arr.size();
+        for(int i=0;i<=n-1;i++){
+            if(arr[i]!=0){
+                temp.push_back(arr[i]);
+            }
+        }
+        int nz=temp.size();
+        for(int j=0;j<nz;j++){
+            arr[j]=temp[j];
+        }
+        for(int i=nz;i<n;i++){
+            arr[i]=0;
+            
+        }
+        
+        
+    }
+    
+};
